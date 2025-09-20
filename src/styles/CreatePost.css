@@ -1,0 +1,227 @@
+/* ✅ Container for header */
+.header-container {
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.header1 {
+  background: linear-gradient(90deg, #f5c43c, #ffd95c);
+  padding: 20px 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  height: 80px;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none; 
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #0057d9;
+}
+
+.profile-circle {
+  background: #0057d9;
+  color: #fff;
+  border-radius: 50%;
+  padding: 8px 12px;
+}
+
+
+/* Create Post Container */
+/* Main page container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* centers it */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Create post box inside container */
+.create-post-container {
+  flex: 1;
+  max-width: 700px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.create-post-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.create-post-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Form Styling */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  width: 100%;
+  
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  width: 670px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #0057d9;
+  box-shadow: 0 0 6px rgba(0, 87, 217, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background: linear-gradient(90deg, #f5c43c, #f5bd23);
+  color: #222;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #ffd95c, #f5c43c);
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+/* Success message */
+.success-message {
+  margin-top: 15px;
+  padding: 12px;
+  background: #dff0d8;
+  color: #2e7d32;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.modal p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modal-buttons button:first-child {
+  background: #00d912;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background: #bababa;
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
